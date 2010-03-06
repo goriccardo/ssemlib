@@ -52,9 +52,7 @@ x = _mm_add_pd(x, tmp);
 __m128d z = _mm_mul_pd(x,x);
 
 /* Numeratore P(x) */
-__m128d y = *(__m128d*)pd_cephes_log_p0;
-
-y = _mm_mul_pd(y, x);
+__m128d y = _mm_mul_pd(x, *(__m128d*)pd_cephes_log_p0);
 y = _mm_add_pd(y, *(__m128d*)pd_cephes_log_p1);
 y = _mm_mul_pd(y, x);
 y = _mm_add_pd(y, *(__m128d*)pd_cephes_log_p2);

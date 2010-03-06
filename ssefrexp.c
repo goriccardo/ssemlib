@@ -3,7 +3,7 @@
  * This file is part of ssemlib and it's released under the *
  * BSD license, see LICENSE                                 */
 
-#include "ssemath.h"
+#include "ssemlib.h"
 
 /* Mask definitions */
 PI64_CONST(mantissa_mask, 0x7ff0000000000000LL);

@@ -3,7 +3,7 @@
  * This file is part of ssemlib and it's released under the *
  * BSD license, see LICENSE                                 */
 
-#include "ssemath.h"
+#include "ssemlib.h"
 
 PD_CONST(one, 1.);
 PD_CONST(half, 0.5);

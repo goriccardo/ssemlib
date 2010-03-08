@@ -32,3 +32,4 @@ x = _mm_or_pd(x, *(__m128d*)pd_half_mask);
 
 return x;
 }
+

@@ -29,3 +29,4 @@ z = _mm_or_pd(z, smask);
 
 return z;
 }
+

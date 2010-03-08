@@ -95,3 +95,4 @@ z = _mm_or_pd(z, invalid_mask); // negative arg will be NAN
 
 return z;
 }
+

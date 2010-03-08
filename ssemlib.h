@@ -27,3 +27,4 @@ __m128d frexp_sse(__m128d x, __m128d *e);
 __m128d log_sse(__m128d x);
 
 #endif //SSE_MATH_H
+

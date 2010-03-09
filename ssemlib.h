@@ -20,8 +20,9 @@
   static const int64_t pi64_##Name[2] __attribute__((aligned(16))) = { Val, Val }
 #define PI32_CONST(Name, Val)                                                         \
   static const int pi32_##Name[4] __attribute__((aligned(16))) = { Val, Val, Val, Val }
-  
+
 __m128d asinh_sse(__m128d x);
+__m128d atan_sse(__m128d x);
 // __m128d atan2_sse(__m128d x, __m128d y);
 __m128d frexp_sse(__m128d x, __m128d *e);
 __m128d log_sse(__m128d x);

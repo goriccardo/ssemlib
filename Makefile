@@ -1,9 +1,9 @@
 LIBNAME = ssemlib.so
 
-LIBSRCS = sseasinh.c ssefrexp.c sselog.c
+LIBSRCS = sseasinh.c ssefrexp.c sselog.c sseatan.c
 SUFFIXES = .c
 
-OBJS = sseasinh.o ssefrexp.o sselog.o
+OBJS = sseasinh.o ssefrexp.o sselog.o sseatan.o
 
 LIBS = 
 

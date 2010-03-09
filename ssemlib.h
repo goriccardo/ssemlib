@@ -23,7 +23,7 @@
 
 __m128d asinh_sse(__m128d x);
 __m128d atan_sse(__m128d x);
-// __m128d atan2_sse(__m128d x, __m128d y);
+__m128d atan2_sse(__m128d x, __m128d y);
 __m128d frexp_sse(__m128d x, __m128d *e);
 __m128d log_sse(__m128d x);
 

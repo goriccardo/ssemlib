@@ -108,3 +108,17 @@ y = _mm_or_pd(y, smask);
 return y;
 }
 
+__m128d atan2_sse(__m128d x, __m128d y)
+{
+__m128d mask = _mm_cmplt_pd(x,_mm_setzero_pd());  // x < 0
+__m128d w = _mm_and_pd(mask, *(__m128d*)pd_PI);
+mask = _mm_cmplt_pd(y, _mm_setzero_pd());
+mask = _mm_and_pd(mask, *(__m128d*)pi64_sign_mask);
+w = _mm_xor_pd(w, mask);
+
+__m128d z = _mm_div_pd(x, y);
+z = atan_sse(z);
+z = _mm_add_pd(w, z);
+return z;
+}
+
